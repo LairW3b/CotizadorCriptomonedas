@@ -19,8 +19,8 @@ const Img = styled.img`
   width: 30%;
   height: 30%;
   @media (min-width: 990px){
-    width: 200px;
-    height: 200px;
+    width: 10%;
+    height: 10%;
   }
 `
 
