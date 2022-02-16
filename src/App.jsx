@@ -49,7 +49,7 @@ function App() {
           <Formulario
             setMonedas={setMonedas}
           />
-          {cargando && <Spinner/>}
+          {/* {cargando && <Spinner/>} */}
           <Resultado
             resultado={resultado}
           />

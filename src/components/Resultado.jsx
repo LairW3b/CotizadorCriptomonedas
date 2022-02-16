@@ -14,7 +14,6 @@ const Img = styled.img`
   height: 200px;
 `
 
-
 const Precio = styled.h3`
   color: #fff;
   font-family: 'Ubuntu', sans-serif;

@@ -6,16 +6,20 @@ import git from '../img/git.png'
 import gmail from '../img/gmail.png'
 
 const Stylefooter = styled.footer`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #010814;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   color: #fff;
-  width: 1000px;
-  height: 150px;
-  border-radius: 10px;
+  background-color: #010814;
   box-shadow: 5px 5px 5px #1c212a;
+  border-radius: 10px;
+  @media (min-width: 800px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: auto;
+  }
 `
 const Ancor = styled.a`
   text-decoration: none;
@@ -33,7 +37,7 @@ const Enlaces = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr) ;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 `
 const ImgLinkedin = styled.img`
   width: 85px;
@@ -89,7 +93,6 @@ const Footer = () => {
             <ImgGmail src={gmail} alt='logo gmail'/>
           </Ancor>
         </Enlaces>
-
       </Contacto>
 
     </Stylefooter>
