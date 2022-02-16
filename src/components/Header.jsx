@@ -16,8 +16,8 @@ const Contendor = styled.div`
   font-family: 'Ubuntu', sans-serif;
 `
 const Img = styled.img`
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   @media (min-width: 990px){
     width: 10%;
     height: 10%;

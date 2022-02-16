@@ -13,11 +13,7 @@ const Img = styled.img`
   width: 200px;
   height: 200px;
 `
-const Imgfija = styled.img`
-  /* display: flex; */
-  width: 200px;
-  height: 200px;
-`
+
 
 const Precio = styled.h3`
   color: #fff;
@@ -41,7 +37,7 @@ const Resultado = ({ resultado }) => {
 
   return (
     <>
-      {PRICE ? (
+      {IMAGEURL ? (
         <Contenedor>
           <Img src={`https://cryptocompare.com/${IMAGEURL}`} alt="imagen cripto" />
           <div>
@@ -54,7 +50,7 @@ const Resultado = ({ resultado }) => {
         </Contenedor>
       ) : (
         <Contenedor>
-          <Imgfija
+          <Img
             src='https://www.cryptocompare.com/media/37746251/btc.png'
             alt="imagen cripto"
           />

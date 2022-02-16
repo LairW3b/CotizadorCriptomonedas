@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Formulario from './components/Formulario'
 import Resultado from './components/Resultado'
 import Spinner from './components/Spinner'
+import Footer from './components/Footer'
 
 const Contenedor = styled.div`
   margin: 10px;
@@ -25,6 +26,7 @@ function App() {
     if (Object.keys(monedas).length > 0) {
       const cotizarCripto = async () => {
 
+        setResultado({})
         setCargando(true)
 
         const { moneda, criptomoneda } = monedas
@@ -52,6 +54,7 @@ function App() {
             resultado={resultado}
           />
       </Contenedor>
+      <Footer/>
     </>
   )
 }

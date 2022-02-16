@@ -10,6 +10,7 @@ const Contenedor = styled.form`
   /* @media (min-width: 991px){
 
   } */
+  margin-bottom: 10px;
 `
 
 const InputSubmit = styled.input`
