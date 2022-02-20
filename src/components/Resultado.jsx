@@ -10,8 +10,11 @@ const Contenedor = styled.div`
   margin: auto;
 `
 const Img = styled.img`
+  position: absolute;
   width: 200px;
   height: 200px;
+  z-index: -10;
+  opacity: 0.2;
 `
 
 const Precio = styled.h3`
@@ -47,15 +50,15 @@ const Resultado = ({ resultado }) => {
             <Texto> {`Ultima actualización: ${LASTUPDATE}`} </Texto>
           </div>
         </Contenedor>
-      ) : (
-        <Contenedor>
+       ) : ( 
+         <Contenedor> 
           <Img
             src='https://www.cryptocompare.com/media/37746251/btc.png'
             alt="imagen cripto"
           />
         </Contenedor>
-      )
-      }
+       ) 
+      } 
     </>
   )
 };
